@@ -1,0 +1,8 @@
+# Ignore .class files
+**/*.class
+
+# Ignore .vscode directory
+.vscode/
+
+# Ignore tempCodeRunnerFile.java
+**/tempCodeRunnerFile.javannerFile.java
