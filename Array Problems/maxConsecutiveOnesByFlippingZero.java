@@ -34,7 +34,6 @@ public class maxConsecutiveOnesByFlippingZero {
             if(k < 0){
                 if(arr[j] == 0)
                     k++;
-                
                 j++;
             }
             i++;

@@ -5,7 +5,7 @@ A subarray with a sum less than 0 will always reduce our answer and so this type
 with maximum sum. Here, we will iterate the given array with a single loop and while iterating we will add the elements in a sum
 variable. Now, if at any point the sum becomes less than 0, we will set the sum as 0 as we are not going to consider any subarray
 with a negative sum. Among all the sums calculated, we will consider the maximum one.
-hus we can solve this problem with a single loop.
+thus we can solve this problem with a single loop.
 
 * Approach:
 

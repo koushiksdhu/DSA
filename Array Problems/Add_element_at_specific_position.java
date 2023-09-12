@@ -1,4 +1,5 @@
-/* Question 13: Given an array of N integers, write a program to add an array element at the beginning, end, and at a specific position.
+/* Question 13: Given an array of N integers, write a program to add
+an array element at the beginning, end, and at a specific position.
 
 Input: N = 5, array[] = {1,2,3,4,5}
     insertbeginning(6)

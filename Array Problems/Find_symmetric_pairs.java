@@ -37,7 +37,7 @@ Explanation: Since (1,5) and (2,4) are symmetric pairs and (5,1) and (4,2) are s
 
 // METHOD 2: Using HashMap
 import java.util.HashMap;
-import java.util.Map;
+
 public class Find_symmetric_pairs{
     public static void main(String args[]){
         int arr[][] = {

@@ -8,8 +8,8 @@ Input: arr1[]= [1,3,4,5,2],              arr2[]= [2,4,3,1,7,5,15]
 Output: arr1[] is a subset of arr2[]
 
 Example 2:
-Input: arr1[]= [1,3,4,5,2].             arr2[]= [4,5,2]
-Output: arr1[] is not a subset of arr2[]
+Input: arr1[]= [1,3,4,5,2].             arr2[]= [1,3,4,5,2]
+Output: arr1[] is a subset of arr2[]
 
 Example 3:
 Input: arr1[]= [1,3,4,5,2],             arr2[]= [11,12,13,15,16]
@@ -97,6 +97,7 @@ public class Check_whether_array_is_subset_of_another_array_or_not{
             System.out.println("arr1[] is not a subset of arr2[]");
                 System.exit(0);
         }
+        
         boolean present = false;
         Arrays.sort(arr1);
 

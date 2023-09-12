@@ -27,41 +27,26 @@
 
 public class DuplicateIntegers {
     public static void main(String args[]){
-        int arr [] = {1, 1, 2, 5, 3, 2, 3, 4, 7, 4};
-        int xor = arr[0];
+        int arr [] = {1, 1, 2, 54, 3, 2, 3, 4, 9, 4};
         
-        // Calculating XOR value:
-        for(int i = 0; i < arr.length; i++){
-            xor ^= arr[i];
-        }
-
-        // Getting the set bit:
-        int count = 0;
-        int temp = xor;
-        while(temp > 0){
-            if((temp & 1) == 1)
-                break;
-            else{
-                temp >>= 1;
-                count++;
-            }
-        }
-
-        // Getting the mask value:
-        int setBit = xor & (1 << count);
-        System.out.println(setBit);
+        int xor = 0;
+        for(int i : arr)
+            xor ^= i;
         
-        int num1 = 0, num2 = 0;
-
-        // Creating two sets and bifurcating the set bit and non-set bit values:
+        int mask = 1;
+        while((xor&mask) == 0){     //  xor&(~(xor-1))
+            mask <<= 1;
+        }
+        
+        int val1 = 0, val2 = 0;
         for(int i : arr){
-            if((i & setBit) != 0)
-                num1 ^= i;
+            if((i&mask) != 0)
+                val1 ^= i;
             else
-                num2 ^= i;
+                val2 ^= i;
         }
-
-        System.out.println("The number that are present once are: "+num1+" and "+num2);
+        
+        System.out.println("The number that are present once are: "+val1+" and "+val2);
     }
 }
 

@@ -13,7 +13,7 @@ Output: 2 4 5 6 20 15 9 8
 import java.util.*;
 public class Arrange_half_in_increasing_and_other_in_decreasing {
     public static void main(String args[]){
-        int arr[] = {8, 7, 1, 6, 5, 9};
+        int arr[] = {8, 7, 1, 6, 5, 9, 10, 11, 12};
         Arrays.sort(arr);
         int n = arr.length - 1;
         int i = n/2+1, j = n;

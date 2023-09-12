@@ -31,7 +31,7 @@ APPROACH:
 
 public class Moore_Voting_Algorithm {
     public static void main(String args[]){
-        int arr[] = {3,1,3,3,2};
+        int arr[] = {5,3,1,3,3,2,3, 7, 3, 3, 7};
 
         int element = 0, count = 0;
         for(int i = 0; i < arr.length; i++){
@@ -40,7 +40,6 @@ public class Moore_Voting_Algorithm {
 
             if(element == arr[i])
                 count++;
-
             else    // if(element != arr[i])
                 count--;
         }
